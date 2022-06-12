@@ -23,10 +23,11 @@ Usage: PdfDecrypt [options] <FromPath> <ToPath>
 
 Arguments:
   FromPath                  The path of the file to remove the password from.
-  ToPath (Optional)         The path to save the decrypted file to.
+  ToPath                    The path to save the decrypted file to. (Optional)
 
 Options:
   -p|--password <PASSWORD>  The password to use to decrypt the file.
-  -nc|--noclose             Whether not to close the application after decrypting the file.
   -?|-h|--help              Show help information.
 ```
+
+
