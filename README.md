@@ -8,7 +8,7 @@ win-x64, win-x86, win-arm, win-arm64, osx-x64, linux-x64, linux-arm
 
 ## Usage
 ```console
-> pdfdecrypt from.pdf
+> pdfdecrypt from
 Password: ********
 ```
 or
