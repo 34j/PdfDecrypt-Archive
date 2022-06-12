@@ -1,6 +1,6 @@
 ﻿# PdfDecrypt
 ## Requirements
-Windows 7 or later
+.Net 6.0 supported environment
 
 ## Installation
 1. Download the latest release from [Releases](https://github.com/34j/PdfDecrypt/releases).
