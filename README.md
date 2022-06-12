@@ -1,6 +1,6 @@
 ﻿# PdfDecrypt
 ## Requirements
-Windows 7 or later
+win-x64, win-x86, win-arm, win-arm64, osx-x64, linux-x64, linux-arm
 
 ## Installation
 1. Download the latest release from [Releases](https://github.com/34j/PdfDecrypt/releases).
