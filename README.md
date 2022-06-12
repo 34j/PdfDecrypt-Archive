@@ -27,6 +27,7 @@ Arguments:
 
 Options:
   -p|--password <PASSWORD>  The password to use to decrypt the file.
+  -na|--noaddextension      Whether not to add ".pdf" to FromPath or ToPath if it does not have extension.
   -?|-h|--help              Show help information.
 ```
 
