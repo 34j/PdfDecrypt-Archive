@@ -20,8 +20,8 @@ namespace PdfDecrypt
         public string Password { get; private set; } = "";
         [Option(ShortName = "nc", LongName = "noclose", Description = "Whether not to close the application after decrypting the file.", ShowInHelpText = false)]
         public bool NoClose { get; private set; } = false;
-        [Option(ShortName = "a", LongName = "addextension", Description = "Whether to add \".pdf\" to FromPath or ToPath if it does not have extension.", ShowInHelpText = false)]
-        public bool AddExtension { get; private set; } = false;
+        [Option(ShortName = "na", LongName = "noaddextension", Description = "Whether not to add \".pdf\" to FromPath or ToPath if it does not have extension.")]
+        public bool NoAddExtension { get; private set; } = false;
         private void OnExecute()
         {
             try
@@ -42,7 +42,7 @@ namespace PdfDecrypt
         {
             // Check FromPath
             FromPath = Path.GetFullPath(FromPath ?? "");            
-            if (!Path.HasExtension(FromPath) && AddExtension)
+            if (!Path.HasExtension(FromPath) && !NoAddExtension)
             {
                 FromPath = Path.ChangeExtension(FromPath, ".pdf");
             }
@@ -59,7 +59,7 @@ namespace PdfDecrypt
             else
             {
                 ToPath = Path.GetFullPath(ToPath);
-                if (!Path.HasExtension(ToPath) && AddExtension)
+                if (!Path.HasExtension(ToPath) && !NoAddExtension)
                 {
                     ToPath = Path.ChangeExtension(ToPath, ".pdf");
                 }
