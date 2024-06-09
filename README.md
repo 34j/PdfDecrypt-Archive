@@ -2,6 +2,8 @@
 
 # Moved to [34j/decryptpdf](https://github.com/34j/decryptpdf) (Python CLI Package) as pikepdf may be able to decrypt more types of PDF files than PdfSharpCore.
 
+(Although PdfSharpCore is also very nice to use.)
+
 ## Requirements
 win-x64, win-x86, win-arm, win-arm64, osx-x64, linux-x64, linux-arm
 
